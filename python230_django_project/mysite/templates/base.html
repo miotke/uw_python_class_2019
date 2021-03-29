@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Django Blog</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'django_blog.css' %}">
+  </head>
+  <body>
+      <div id="header">
+          <ul id="control-bar">
+          {% if user.is_authenticated %}
+          <li>Logged in as {{ user.username }}</li> |
+           {% if user.is_staff %}<li><a href="{% url 'admin:index' %}">admin</a></li>{% endif %}
+            <li><a href="{% url 'logout' %}">logout</a></li>
+           {% else %}
+            <li><a href="{% url 'login' %}">login</a></li> |
+            <li><a class="btn btn-primary" href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a></li>
+          {% endif %}
+          </ul>
+      </div>
+    <div id="container">
+      <div id="content">
+      {% block content %}
+       [content will go here]
+      {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>

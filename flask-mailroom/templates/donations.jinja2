@@ -1,0 +1,20 @@
+{% extends 'base.jinja2' %}
+
+{% block subtitle %}Donations{% endblock subtitle %}
+
+{% block content %}
+<ul>
+    {% for donation in donations %}
+    <div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ donation.donor.name }}</h5>
+            <p class="card-text">Donated: {{ donation.value }}</p>
+        </div>
+    </div>
+
+    {% endfor %}
+</ul>
+{% endblock content %}

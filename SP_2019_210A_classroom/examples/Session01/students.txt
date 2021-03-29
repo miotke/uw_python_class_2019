@@ -1,0 +1,21 @@
+Name: Programming Languages
+Frederick Ballyns: Matlab, VBA
+Peter Michael Berhe: HTML, CSS
+Brian Brumleve: python, C++
+Jasneet Kaur Chandok: SQL, Python
+Charlie England: Python, javascript, go
+Brian Scott Ervin: Bash, SQL
+ :
+George J Kim: html css javascript python SQL
+Andrew M Miotke: Swift,
+Joseph Charles Nunnelley:
+Cole Garvens Phalen: Python
+Tyler Ray: html, css, C++
+Sarah H Rickli: Python, SQL, R
+Miguel Antonio Rovira-Gonzalez:SQL, Python
+Ying Shen (Sally): Java, SQL,
+Rimlee Talukdar: SQL,
+James S Ward: powershell,
+Arch Wu : java, python
+Lincoln Zhang: python
+
